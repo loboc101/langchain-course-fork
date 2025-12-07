@@ -5,3 +5,4 @@ uv add langchain
 uv add langchain-openai
 uv add python-dotenv
 uv add black isort
+uv add langchain-ollama
