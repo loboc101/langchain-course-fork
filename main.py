@@ -9,7 +9,7 @@ from langchain_tavily import TavilySearch
 from schemas import AgentResponse
 
 tools = [TavilySearch()]
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatOpenAI(model="gpt-5-nano")
 
 
 agent = create_agent(
@@ -25,7 +25,7 @@ def main():
             "messages": [
                 {
                     "role": "user",
-                    "content": "search for 3 job postings for an ai engineer using langchain in the bay area on linkedin and list their details",
+                    "content": "search for 3 popular tourist destinations in Thailand for families with kids",
                 }
             ]
         }
